@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 bottle = ">=0.12" # stable at 2020-04-09
+sanic = "*"
+falcon = "*"
 
 [dev-packages]
 
