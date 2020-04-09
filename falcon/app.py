@@ -9,8 +9,23 @@ class HelloWorld:
         resp.body = 'Hello World'
 
 
-app = falcon.App()
-app.add_route('/tests/hello-world', HelloWorld())
+class Blocks:
+    def on_get(self, req, resp):
+        pass
+
+
+class Transactions:
+    def on_get(self, req, resp):
+        pass
+
+    def on_post(self, req, resp):
+        pass
+
+
+app = falcon.API()
+app.add_route('/hello-world', HelloWorld())
+app.add_route('/blocks', Blocks())
+app.add_route('/transactions', Transactions())
 
 if __name__ == '__main__':
     with make_server('', 8000, app) as httpd:
