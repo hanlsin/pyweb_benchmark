@@ -19,6 +19,19 @@ We are testing a testnet, so it may be a different performance with a mainnet.
 ### Aergo
 TBD
 
+## Test cases
+
+### Case 1.
+Performance test for getting 1000 blocks by 100 sessions concurrently.
+
+### Case 2.
+Performance test for getting all transactions of 1000 blocks by 100 sessions concurrently.
+The block range would be fixed for checking same transactions by all frameworks.
+
+### Case 3.
+Performance test for sending 100 transactions by 100 sessions concurrently.
+All payloads of transactions would be fixed for providing same network size.
+
 ## Environment
 We are using `pipenv` as a default virtual environment tool.
 
