@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-bottle = "*"
+bottle = ">=0.12" # stable at 2020-04-09
 
 [dev-packages]
 

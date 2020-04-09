@@ -7,7 +7,7 @@ This is for benchmark testing Python web frameworks for a blockchain
 ## Web frameworks
 * [Flask](https://github.com/pallets/flask)
 * [Sanic](https://github.com/huge-success/sanic)
-* [Bottle](https://github.com/bottlepy/bottle)
+* [Bottle](https://github.com/bottlepy/bottle) version 0.12(stable) at 2020-04-09
 * [Falcon](https://github.com/falconry/falcon)
 
 ## Blockchain
