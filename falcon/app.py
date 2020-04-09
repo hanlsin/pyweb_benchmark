@@ -1,22 +1,29 @@
 from wsgiref.simple_server import make_server
 
 import falcon
+from web3 import Web3
+
+web3 = Web3(Web3.HTTPProvider(
+    'https://ropsten.infura.io/v3/43d5d59eb1b5425f93a5acb2d334d9e2'))
 
 
 class HelloWorld:
     def on_get(self, req, resp):
-        resp.status = falcon.HTTP_200  # This is the default status
         resp.body = 'Hello World'
 
 
 class Blocks:
     def on_get(self, req, resp):
-        pass
+        for i in range(1000):
+            web3.eth.getBlock(200000)
+        resp.body = 'retrieved 1000 blocks'
 
 
 class Transactions:
     def on_get(self, req, resp):
-        pass
+        for i in range(1000):
+            web3.eth.getBlock(200000, full_transactions=True)
+        resp.body = 'retrieved 1000 blocks and all transactions of each'
 
     def on_post(self, req, resp):
         pass
