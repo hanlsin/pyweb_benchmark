@@ -41,3 +41,25 @@ Please check the default python version above to make a proper virtual environme
 ```
 pipenv shell
 ```
+
+### Install dependencies
+
+#### Pipfile
+
+You can install all dependent libraries by following:
+
+```
+pipenv install
+```
+
+#### `pycryptodome`
+The Ethereum connectivity library `Web3py` uses `pycryptodome`. But, it would be failed to install it via `pipenv install` above. In that case, you need to install it manually.
+
+```
+pip install pycryptodome
+```
+
+### Test cases on each frameworks
+
+TBD
+

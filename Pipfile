@@ -8,6 +8,7 @@ bottle = ">=0.12" # stable at 2020-04-09
 falcon = "*"
 sanic = "*"
 web3 = "*"
+flask = "*"
 
 [dev-packages]
 
